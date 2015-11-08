@@ -18,7 +18,7 @@ namespace ADO0NET
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmGroupby());
+            Application.Run(new FrmMyAlbum());
         }
     }
 }
