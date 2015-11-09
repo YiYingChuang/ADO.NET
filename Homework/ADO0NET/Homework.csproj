@@ -68,6 +68,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AdventureWorksDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FrmMyAlbumDataSet.cs">
+      <DependentUpon>FrmMyAlbumDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FrmMyAlbumDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
