@@ -28,74 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmImageFlags));
-            this.ImageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.ImageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ImageList1
+            // pictureBox1
             // 
-            this.ImageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ImageList1.ImageStream")));
-            this.ImageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ImageList1.Images.SetKeyName(0, "FLGGERM.ICO");
-            this.ImageList1.Images.SetKeyName(1, "CTRCAN.ICO");
-            this.ImageList1.Images.SetKeyName(2, "CTRFRAN.ICO");
-            this.ImageList1.Images.SetKeyName(3, "CTRGERM.ICO");
-            this.ImageList1.Images.SetKeyName(4, "CTRITALY.ICO");
-            this.ImageList1.Images.SetKeyName(5, "CTRJAPAN.ICO");
-            this.ImageList1.Images.SetKeyName(6, "CTRMEX.ICO");
-            this.ImageList1.Images.SetKeyName(7, "CTRSKOR.ICO");
-            this.ImageList1.Images.SetKeyName(8, "CTRSPAIN.ICO");
-            this.ImageList1.Images.SetKeyName(9, "CTRUK.ICO");
-            this.ImageList1.Images.SetKeyName(10, "CTRUSA.ICO");
-            this.ImageList1.Images.SetKeyName(11, "FLGASTRL.ICO");
-            this.ImageList1.Images.SetKeyName(12, "FLGAUSTA.ICO");
-            this.ImageList1.Images.SetKeyName(13, "FLGBELG.ICO");
-            this.ImageList1.Images.SetKeyName(14, "FLGBRAZL.ICO");
-            this.ImageList1.Images.SetKeyName(15, "FLGCAN.ICO");
-            this.ImageList1.Images.SetKeyName(16, "FLGDEN.ICO");
-            this.ImageList1.Images.SetKeyName(17, "FLGFIN.ICO");
-            this.ImageList1.Images.SetKeyName(18, "FLGFRAN.ICO");
+            this.pictureBox1.Location = new System.Drawing.Point(48, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(640, 407);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // ImageList2
+            // toolStrip1
             // 
-            this.ImageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ImageList2.ImageStream")));
-            this.ImageList2.TransparentColor = System.Drawing.Color.Transparent;
-            this.ImageList2.Images.SetKeyName(0, "FLGGERM.ICO");
-            this.ImageList2.Images.SetKeyName(1, "CTRCAN.ICO");
-            this.ImageList2.Images.SetKeyName(2, "CTRFRAN.ICO");
-            this.ImageList2.Images.SetKeyName(3, "CTRGERM.ICO");
-            this.ImageList2.Images.SetKeyName(4, "CTRITALY.ICO");
-            this.ImageList2.Images.SetKeyName(5, "CTRJAPAN.ICO");
-            this.ImageList2.Images.SetKeyName(6, "CTRMEX.ICO");
-            this.ImageList2.Images.SetKeyName(7, "CTRSKOR.ICO");
-            this.ImageList2.Images.SetKeyName(8, "CTRSPAIN.ICO");
-            this.ImageList2.Images.SetKeyName(9, "CTRUK.ICO");
-            this.ImageList2.Images.SetKeyName(10, "CTRUSA.ICO");
-            this.ImageList2.Images.SetKeyName(11, "FLGASTRL.ICO");
-            this.ImageList2.Images.SetKeyName(12, "FLGAUSTA.ICO");
-            this.ImageList2.Images.SetKeyName(13, "FLGBELG.ICO");
-            this.ImageList2.Images.SetKeyName(14, "FLGBRAZL.ICO");
-            this.ImageList2.Images.SetKeyName(15, "FLGCAN.ICO");
-            this.ImageList2.Images.SetKeyName(16, "FLGDEN.ICO");
-            this.ImageList2.Images.SetKeyName(17, "FLGFIN.ICO");
-            this.ImageList2.Images.SetKeyName(18, "FLGFRAN.ICO");
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton3});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 484);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(731, 39);
+            this.toolStrip1.TabIndex = 7;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(79, 36);
+            this.toolStripButton1.Text = "上一頁";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(79, 36);
+            this.toolStripButton2.Text = "下一頁";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(91, 36);
+            this.toolStripButton3.Text = "連續撥放";
             // 
             // FrmImageFlags
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 409);
+            this.ClientSize = new System.Drawing.Size(731, 523);
+            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FrmImageFlags";
             this.Text = "FrmImageFlags";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        internal System.Windows.Forms.ImageList ImageList1;
-        internal System.Windows.Forms.ImageList ImageList2;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        internal System.Windows.Forms.PictureBox pictureBox1;
+        internal System.Windows.Forms.ToolStrip toolStrip1;
+
     }
 }

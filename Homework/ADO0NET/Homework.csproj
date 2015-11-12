@@ -68,15 +68,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AdventureWorksDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FrmMyAlbumDataSet.cs">
-      <DependentUpon>FrmMyAlbumDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="FrmMyAlbumDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FrmMyAlbumDataSet.xsd</DependentUpon>
-    </Compile>
+    <Compile Include="ClsPictureBox.cs" />
     <Compile Include="Homework\01. Frm_Connected.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,17 +93,22 @@
     <Compile Include="Homework\03. FrmCategoryProducts_LinkLabel.Designer.cs">
       <DependentUpon>03. FrmCategoryProducts_LinkLabel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Homework\05. FrmMyAlbum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homework\05. FrmMyAlbum.Designer.cs">
+      <DependentUpon>05. FrmMyAlbum.cs</DependentUpon>
+    </Compile>
     <Compile Include="Homework\FrmImageFlags.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Homework\FrmImageFlags.designer.cs">
       <DependentUpon>FrmImageFlags.cs</DependentUpon>
     </Compile>
-    <Compile Include="Homework\05. FrmMyAlbum.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Homework\05. FrmMyAlbum.Designer.cs">
-      <DependentUpon>05. FrmMyAlbum.cs</DependentUpon>
+    <Compile Include="MyAlbumDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyAlbumDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="NorthwindDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -158,16 +155,16 @@
     <None Include="AdventureWorksDataSet.xss">
       <DependentUpon>AdventureWorksDataSet.xsd</DependentUpon>
     </None>
-    <None Include="FrmMyAlbumDataSet.xsc">
-      <DependentUpon>FrmMyAlbumDataSet.xsd</DependentUpon>
+    <None Include="MyAlbumDataSet.xsc">
+      <DependentUpon>MyAlbumDataSet.xsd</DependentUpon>
     </None>
-    <None Include="FrmMyAlbumDataSet.xsd">
+    <None Include="MyAlbumDataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FrmMyAlbumDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>MyAlbumDataSet.Designer.cs</LastGenOutput>
     </None>
-    <None Include="FrmMyAlbumDataSet.xss">
-      <DependentUpon>FrmMyAlbumDataSet.xsd</DependentUpon>
+    <None Include="MyAlbumDataSet.xss">
+      <DependentUpon>MyAlbumDataSet.xsd</DependentUpon>
     </None>
     <None Include="NorthwindDataSet.xsc">
       <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
@@ -192,15 +189,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MyAlbum.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="MyAlbum_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>MyAlbum.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
