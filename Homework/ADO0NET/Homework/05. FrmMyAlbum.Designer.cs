@@ -163,72 +163,80 @@
             // photoIDLabel
             // 
             photoIDLabel.AutoSize = true;
-            photoIDLabel.Location = new System.Drawing.Point(30, 73);
+            photoIDLabel.Location = new System.Drawing.Point(40, 91);
+            photoIDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             photoIDLabel.Name = "photoIDLabel";
-            photoIDLabel.Size = new System.Drawing.Size(50, 12);
+            photoIDLabel.Size = new System.Drawing.Size(63, 15);
             photoIDLabel.TabIndex = 3;
             photoIDLabel.Text = "Photo ID:";
             // 
             // categoryIDLabel
             // 
             categoryIDLabel.AutoSize = true;
-            categoryIDLabel.Location = new System.Drawing.Point(30, 101);
+            categoryIDLabel.Location = new System.Drawing.Point(40, 126);
+            categoryIDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             categoryIDLabel.Name = "categoryIDLabel";
-            categoryIDLabel.Size = new System.Drawing.Size(66, 12);
+            categoryIDLabel.Size = new System.Drawing.Size(81, 15);
             categoryIDLabel.TabIndex = 5;
             categoryIDLabel.Text = "Category ID:";
             // 
             // photoNameLabel
             // 
             photoNameLabel.AutoSize = true;
-            photoNameLabel.Location = new System.Drawing.Point(30, 129);
+            photoNameLabel.Location = new System.Drawing.Point(40, 161);
+            photoNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             photoNameLabel.Name = "photoNameLabel";
-            photoNameLabel.Size = new System.Drawing.Size(65, 12);
+            photoNameLabel.Size = new System.Drawing.Size(81, 15);
             photoNameLabel.TabIndex = 7;
             photoNameLabel.Text = "Photo Name:";
             // 
             // pictureLabel
             // 
             pictureLabel.AutoSize = true;
-            pictureLabel.Location = new System.Drawing.Point(369, 52);
+            pictureLabel.Location = new System.Drawing.Point(492, 65);
+            pictureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             pictureLabel.Name = "pictureLabel";
-            pictureLabel.Size = new System.Drawing.Size(40, 12);
+            pictureLabel.Size = new System.Drawing.Size(51, 15);
             pictureLabel.TabIndex = 9;
             pictureLabel.Text = "Picture:";
             // 
             // descriptionLabel
             // 
             descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(30, 157);
+            descriptionLabel.Location = new System.Drawing.Point(40, 196);
+            descriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(61, 12);
+            descriptionLabel.Size = new System.Drawing.Size(76, 15);
             descriptionLabel.TabIndex = 11;
             descriptionLabel.Text = "Description:";
             // 
             // dateLabel
             // 
             dateLabel.AutoSize = true;
-            dateLabel.Location = new System.Drawing.Point(30, 186);
+            dateLabel.Location = new System.Drawing.Point(40, 232);
+            dateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             dateLabel.Name = "dateLabel";
-            dateLabel.Size = new System.Drawing.Size(29, 12);
+            dateLabel.Size = new System.Drawing.Size(37, 15);
             dateLabel.TabIndex = 13;
             dateLabel.Text = "Date:";
             // 
             // categoryIDLabel1
             // 
             categoryIDLabel1.AutoSize = true;
-            categoryIDLabel1.Location = new System.Drawing.Point(18, 76);
+            categoryIDLabel1.Location = new System.Drawing.Point(24, 95);
+            categoryIDLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             categoryIDLabel1.Name = "categoryIDLabel1";
-            categoryIDLabel1.Size = new System.Drawing.Size(66, 12);
+            categoryIDLabel1.Size = new System.Drawing.Size(81, 15);
             categoryIDLabel1.TabIndex = 3;
             categoryIDLabel1.Text = "Category ID:";
             // 
             // categoryNameLabel
             // 
             categoryNameLabel.AutoSize = true;
-            categoryNameLabel.Location = new System.Drawing.Point(18, 104);
+            categoryNameLabel.Location = new System.Drawing.Point(24, 130);
+            categoryNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             categoryNameLabel.Name = "categoryNameLabel";
-            categoryNameLabel.Size = new System.Drawing.Size(81, 12);
+            categoryNameLabel.Size = new System.Drawing.Size(99, 15);
             categoryNameLabel.TabIndex = 5;
             categoryNameLabel.Text = "Category Name:";
             // 
@@ -236,6 +244,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -246,8 +255,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(978, 586);
-            this.splitContainer1.SplitterDistance = 97;
+            this.splitContainer1.Size = new System.Drawing.Size(1304, 732);
+            this.splitContainer1.SplitterDistance = 121;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // label2
@@ -257,9 +267,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(366, 9);
+            this.label2.Location = new System.Drawing.Point(488, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 44);
+            this.label2.Size = new System.Drawing.Size(266, 57);
             this.label2.TabIndex = 1;
             this.label2.Text = "My Album";
             // 
@@ -270,17 +281,19 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(978, 485);
+            this.tabControl1.Size = new System.Drawing.Size(1304, 606);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.splitContainer4);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(970, 459);
+            this.tabPage3.Size = new System.Drawing.Size(1296, 577);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Review Photo";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -289,6 +302,7 @@
             // 
             this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer4.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer4.Name = "splitContainer4";
             // 
             // splitContainer4.Panel1
@@ -298,33 +312,37 @@
             // splitContainer4.Panel2
             // 
             this.splitContainer4.Panel2.Controls.Add(this.flowLayoutPanel2);
-            this.splitContainer4.Size = new System.Drawing.Size(970, 459);
-            this.splitContainer4.SplitterDistance = 143;
+            this.splitContainer4.Size = new System.Drawing.Size(1296, 577);
+            this.splitContainer4.SplitterDistance = 191;
+            this.splitContainer4.SplitterWidth = 5;
             this.splitContainer4.TabIndex = 0;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(143, 459);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(191, 577);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(823, 459);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1100, 577);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.splitContainer2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(970, 459);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Size = new System.Drawing.Size(1296, 577);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Add Picture";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -332,7 +350,8 @@
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer2.Location = new System.Drawing.Point(4, 4);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -344,16 +363,17 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.flowLayoutPanel3);
-            this.splitContainer2.Size = new System.Drawing.Size(964, 453);
-            this.splitContainer2.SplitterDistance = 116;
+            this.splitContainer2.Size = new System.Drawing.Size(1288, 569);
+            this.splitContainer2.SplitterDistance = 145;
+            this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(216, 30);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(288, 38);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 28);
+            this.button1.Size = new System.Drawing.Size(112, 35);
             this.button1.TabIndex = 3;
             this.button1.Text = "Folder...";
             this.button1.UseVisualStyleBackColor = true;
@@ -361,10 +381,10 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(24, 31);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox1.Location = new System.Drawing.Point(32, 39);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(136, 20);
+            this.comboBox1.Size = new System.Drawing.Size(180, 23);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -372,17 +392,19 @@
             // 
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(964, 333);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1288, 419);
             this.flowLayoutPanel3.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.splitContainer5);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(970, 459);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Size = new System.Drawing.Size(1296, 577);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tools";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -390,7 +412,8 @@
             // splitContainer5
             // 
             this.splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer5.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer5.Location = new System.Drawing.Point(4, 4);
+            this.splitContainer5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer5.Name = "splitContainer5";
             this.splitContainer5.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -401,17 +424,19 @@
             // splitContainer5.Panel2
             // 
             this.splitContainer5.Panel2.Controls.Add(this.splitContainer6);
-            this.splitContainer5.Size = new System.Drawing.Size(964, 453);
-            this.splitContainer5.SplitterDistance = 66;
+            this.splitContainer5.Size = new System.Drawing.Size(1288, 569);
+            this.splitContainer5.SplitterDistance = 82;
+            this.splitContainer5.SplitterWidth = 5;
             this.splitContainer5.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 14);
+            this.label1.Location = new System.Drawing.Point(19, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 27);
+            this.label1.Size = new System.Drawing.Size(285, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Photo Management";
             // 
@@ -419,6 +444,7 @@
             // 
             this.splitContainer6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer6.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer6.Name = "splitContainer6";
             // 
             // splitContainer6.Panel1
@@ -428,14 +454,16 @@
             // splitContainer6.Panel2
             // 
             this.splitContainer6.Panel2.Controls.Add(this.splitContainer3);
-            this.splitContainer6.Size = new System.Drawing.Size(964, 383);
-            this.splitContainer6.SplitterDistance = 294;
+            this.splitContainer6.Size = new System.Drawing.Size(1288, 482);
+            this.splitContainer6.SplitterDistance = 392;
+            this.splitContainer6.SplitterWidth = 5;
             this.splitContainer6.TabIndex = 0;
             // 
             // splitContainer7
             // 
             this.splitContainer7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer7.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer7.Name = "splitContainer7";
             this.splitContainer7.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -451,16 +479,18 @@
             // splitContainer7.Panel2
             // 
             this.splitContainer7.Panel2.Controls.Add(this.photoCategoryDataGridView);
-            this.splitContainer7.Size = new System.Drawing.Size(294, 383);
-            this.splitContainer7.SplitterDistance = 207;
+            this.splitContainer7.Size = new System.Drawing.Size(392, 482);
+            this.splitContainer7.SplitterDistance = 260;
+            this.splitContainer7.SplitterWidth = 5;
             this.splitContainer7.TabIndex = 0;
             // 
             // categoryIDTextBox1
             // 
             this.categoryIDTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.photoCategoryBindingSource, "CategoryID", true));
-            this.categoryIDTextBox1.Location = new System.Drawing.Point(105, 73);
+            this.categoryIDTextBox1.Location = new System.Drawing.Point(140, 91);
+            this.categoryIDTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.categoryIDTextBox1.Name = "categoryIDTextBox1";
-            this.categoryIDTextBox1.Size = new System.Drawing.Size(100, 22);
+            this.categoryIDTextBox1.Size = new System.Drawing.Size(132, 25);
             this.categoryIDTextBox1.TabIndex = 4;
             // 
             // photoCategoryBindingSource
@@ -476,9 +506,10 @@
             // categoryNameTextBox
             // 
             this.categoryNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.photoCategoryBindingSource, "CategoryName", true));
-            this.categoryNameTextBox.Location = new System.Drawing.Point(105, 101);
+            this.categoryNameTextBox.Location = new System.Drawing.Point(140, 126);
+            this.categoryNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.categoryNameTextBox.Name = "categoryNameTextBox";
-            this.categoryNameTextBox.Size = new System.Drawing.Size(100, 22);
+            this.categoryNameTextBox.Size = new System.Drawing.Size(132, 25);
             this.categoryNameTextBox.TabIndex = 6;
             // 
             // photoCategoryBindingNavigator
@@ -507,7 +538,7 @@
             this.photoCategoryBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.photoCategoryBindingNavigator.Name = "photoCategoryBindingNavigator";
             this.photoCategoryBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.photoCategoryBindingNavigator.Size = new System.Drawing.Size(294, 25);
+            this.photoCategoryBindingNavigator.Size = new System.Drawing.Size(392, 27);
             this.photoCategoryBindingNavigator.TabIndex = 3;
             this.photoCategoryBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -517,13 +548,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 24);
             this.bindingNavigatorAddNewItem.Text = "加入新的";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(27, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(34, 24);
             this.bindingNavigatorCountItem.Text = "/{0}";
             this.bindingNavigatorCountItem.ToolTipText = "項目總數";
             // 
@@ -533,7 +564,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 24);
             this.bindingNavigatorDeleteItem.Text = "刪除";
             // 
             // bindingNavigatorMoveFirstItem
@@ -542,7 +573,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 24);
             this.bindingNavigatorMoveFirstItem.Text = "移到最前面";
             // 
             // bindingNavigatorMovePreviousItem
@@ -551,27 +582,27 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 24);
             this.bindingNavigatorMovePreviousItem.Text = "移到上一個";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "位置";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "目前的位置";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -579,7 +610,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 24);
             this.bindingNavigatorMoveNextItem.Text = "移到下一個";
             // 
             // bindingNavigatorMoveLastItem
@@ -588,20 +619,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 24);
             this.bindingNavigatorMoveLastItem.Text = "移到最後面";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // photoCategoryBindingNavigatorSaveItem
             // 
             this.photoCategoryBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.photoCategoryBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("photoCategoryBindingNavigatorSaveItem.Image")));
             this.photoCategoryBindingNavigatorSaveItem.Name = "photoCategoryBindingNavigatorSaveItem";
-            this.photoCategoryBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.photoCategoryBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 24);
             this.photoCategoryBindingNavigatorSaveItem.Text = "儲存資料";
             // 
             // photoCategoryDataGridView
@@ -614,9 +645,10 @@
             this.photoCategoryDataGridView.DataSource = this.photoCategoryBindingSource;
             this.photoCategoryDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.photoCategoryDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.photoCategoryDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.photoCategoryDataGridView.Name = "photoCategoryDataGridView";
             this.photoCategoryDataGridView.RowTemplate.Height = 24;
-            this.photoCategoryDataGridView.Size = new System.Drawing.Size(294, 172);
+            this.photoCategoryDataGridView.Size = new System.Drawing.Size(392, 217);
             this.photoCategoryDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
@@ -636,6 +668,7 @@
             // 
             this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer3.Name = "splitContainer3";
             this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -661,15 +694,17 @@
             // 
             this.splitContainer3.Panel2.AutoScroll = true;
             this.splitContainer3.Panel2.Controls.Add(this.photosDataGridView);
-            this.splitContainer3.Size = new System.Drawing.Size(666, 383);
-            this.splitContainer3.SplitterDistance = 205;
+            this.splitContainer3.Size = new System.Drawing.Size(891, 482);
+            this.splitContainer3.SplitterDistance = 257;
+            this.splitContainer3.SplitterWidth = 5;
             this.splitContainer3.TabIndex = 0;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(514, 236);
+            this.button2.Location = new System.Drawing.Point(685, 295);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 29);
             this.button2.TabIndex = 15;
             this.button2.Text = "Browser...\r\n";
             this.button2.UseVisualStyleBackColor = true;
@@ -678,9 +713,10 @@
             // photoIDTextBox
             // 
             this.photoIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.photosBindingSource, "PhotoID", true));
-            this.photoIDTextBox.Location = new System.Drawing.Point(102, 70);
+            this.photoIDTextBox.Location = new System.Drawing.Point(136, 88);
+            this.photoIDTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.photoIDTextBox.Name = "photoIDTextBox";
-            this.photoIDTextBox.Size = new System.Drawing.Size(200, 22);
+            this.photoIDTextBox.Size = new System.Drawing.Size(265, 25);
             this.photoIDTextBox.TabIndex = 4;
             // 
             // photosBindingSource
@@ -691,42 +727,47 @@
             // categoryIDTextBox
             // 
             this.categoryIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.photosBindingSource, "CategoryID", true));
-            this.categoryIDTextBox.Location = new System.Drawing.Point(102, 98);
+            this.categoryIDTextBox.Location = new System.Drawing.Point(136, 122);
+            this.categoryIDTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.categoryIDTextBox.Name = "categoryIDTextBox";
-            this.categoryIDTextBox.Size = new System.Drawing.Size(200, 22);
+            this.categoryIDTextBox.Size = new System.Drawing.Size(265, 25);
             this.categoryIDTextBox.TabIndex = 6;
             // 
             // photoNameTextBox
             // 
             this.photoNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.photosBindingSource, "PhotoName", true));
-            this.photoNameTextBox.Location = new System.Drawing.Point(102, 126);
+            this.photoNameTextBox.Location = new System.Drawing.Point(136, 158);
+            this.photoNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.photoNameTextBox.Name = "photoNameTextBox";
-            this.photoNameTextBox.Size = new System.Drawing.Size(200, 22);
+            this.photoNameTextBox.Size = new System.Drawing.Size(265, 25);
             this.photoNameTextBox.TabIndex = 8;
             // 
             // picturePictureBox
             // 
             this.picturePictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.photosBindingSource, "Picture", true));
-            this.picturePictureBox.Location = new System.Drawing.Point(371, 73);
+            this.picturePictureBox.Location = new System.Drawing.Point(495, 91);
+            this.picturePictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picturePictureBox.Name = "picturePictureBox";
-            this.picturePictureBox.Size = new System.Drawing.Size(218, 138);
+            this.picturePictureBox.Size = new System.Drawing.Size(291, 172);
             this.picturePictureBox.TabIndex = 10;
             this.picturePictureBox.TabStop = false;
             // 
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.photosBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(102, 154);
+            this.descriptionTextBox.Location = new System.Drawing.Point(136, 192);
+            this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(200, 22);
+            this.descriptionTextBox.Size = new System.Drawing.Size(265, 25);
             this.descriptionTextBox.TabIndex = 12;
             // 
             // dateDateTimePicker
             // 
             this.dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.photosBindingSource, "Date", true));
-            this.dateDateTimePicker.Location = new System.Drawing.Point(102, 182);
+            this.dateDateTimePicker.Location = new System.Drawing.Point(136, 228);
+            this.dateDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateDateTimePicker.Name = "dateDateTimePicker";
-            this.dateDateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.dateDateTimePicker.Size = new System.Drawing.Size(265, 25);
             this.dateDateTimePicker.TabIndex = 14;
             // 
             // bindingNavigator1
@@ -755,7 +796,7 @@
             this.bindingNavigator1.MovePreviousItem = this.toolStripButton4;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.toolStripTextBox1;
-            this.bindingNavigator1.Size = new System.Drawing.Size(649, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(870, 27);
             this.bindingNavigator1.TabIndex = 3;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -765,13 +806,13 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 24);
             this.toolStripButton1.Text = "加入新的";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(27, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(34, 24);
             this.toolStripLabel1.Text = "/{0}";
             this.toolStripLabel1.ToolTipText = "項目總數";
             // 
@@ -781,7 +822,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 24);
             this.toolStripButton2.Text = "刪除";
             // 
             // toolStripButton3
@@ -790,7 +831,7 @@
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 24);
             this.toolStripButton3.Text = "移到最前面";
             // 
             // toolStripButton4
@@ -799,27 +840,27 @@
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton4.Size = new System.Drawing.Size(23, 24);
             this.toolStripButton4.Text = "移到上一個";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripTextBox1
             // 
             this.toolStripTextBox1.AccessibleName = "位置";
             this.toolStripTextBox1.AutoSize = false;
             this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(50, 23);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(65, 27);
             this.toolStripTextBox1.Text = "0";
             this.toolStripTextBox1.ToolTipText = "目前的位置";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripButton5
             // 
@@ -827,7 +868,7 @@
             this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton5.Size = new System.Drawing.Size(23, 24);
             this.toolStripButton5.Text = "移到下一個";
             // 
             // toolStripButton6
@@ -836,13 +877,18 @@
             this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton6.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton6.Size = new System.Drawing.Size(23, 24);
             this.toolStripButton6.Text = "移到最後面";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
+            // 
+            // toolStripButton7
+            // 
+            this.toolStripButton7.Name = "toolStripButton7";
+            this.toolStripButton7.Size = new System.Drawing.Size(23, 24);
             // 
             // photosDataGridView
             // 
@@ -858,9 +904,10 @@
             this.photosDataGridView.DataSource = this.photosBindingSource;
             this.photosDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.photosDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.photosDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.photosDataGridView.Name = "photosDataGridView";
             this.photosDataGridView.RowTemplate.Height = 24;
-            this.photosDataGridView.Size = new System.Drawing.Size(666, 174);
+            this.photosDataGridView.Size = new System.Drawing.Size(891, 220);
             this.photosDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn3
@@ -919,13 +966,14 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // Form1
+            // FrmMyAlbum
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 586);
+            this.ClientSize = new System.Drawing.Size(1304, 732);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "FrmMyAlbum";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -1040,7 +1088,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.SplitContainer splitContainer4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox photoIDTextBox;
         private System.Windows.Forms.TextBox categoryIDTextBox;
@@ -1051,6 +1098,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox categoryIDTextBox1;
         private System.Windows.Forms.TextBox categoryNameTextBox;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        internal System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        internal System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
     }
 }

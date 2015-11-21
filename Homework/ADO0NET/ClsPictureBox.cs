@@ -12,14 +12,11 @@ namespace ADO0NET
 {
     internal  class ClsPictureBox
     {
-         internal Image image;
-         internal PictureBox pictureBox;
-         internal int picture_index;
-         internal static FrmMyAlbum Form1;
+         internal PictureBox pictureBox;       
+        internal static FrmMyAlbum Form1;
 
         internal  ClsPictureBox()
         {
-            //image = null;
             pictureBox = new PictureBox();
             pictureBox.BorderStyle = BorderStyle.FixedSingle;
             pictureBox.Height = 120;
@@ -30,7 +27,6 @@ namespace ADO0NET
             pictureBox.MouseEnter += picturebox_MouseEnter;
             pictureBox.MouseLeave += picturebox_MouseLeave;
             pictureBox.MouseClick += picturebox_MouseClick;
-            //picture_index = 0;
         }
         void picturebox_MouseClick(object sender, MouseEventArgs e)
         {

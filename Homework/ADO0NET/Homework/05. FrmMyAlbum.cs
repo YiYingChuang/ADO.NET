@@ -27,8 +27,6 @@ namespace ADO0NET.Homework
             this.flowLayoutPanel2.DragEnter += flowLayoutPanel_DragEnter;
             this.flowLayoutPanel2.DragDrop += flowLayoutPanel_DragDrop;
             ClsPictureBox.Form1 = this;
-
-          
         }
         List<int> CategoryID = new List<int>();
         int photoCategoryID;
@@ -169,6 +167,7 @@ namespace ADO0NET.Homework
         void picturebox_MouseClick(object sender, MouseEventArgs e)
         {
             FrmImageFlags f = new FrmImageFlags();
+            f.pictureboxIndex = this.flowLayoutPanel2.Controls.GetChildIndex((PictureBox)sender,false);
             f.Show();
         }
 
@@ -199,7 +198,7 @@ namespace ADO0NET.Homework
                             byte[] bytes = (byte[])datareader["Picture"];
                             MemoryStream ms = new MemoryStream(bytes);
                             box.pictureBox.Image = Image.FromStream(ms);
-                            box.image = Image.FromStream(ms);
+                            box.pictureBox.Image= Image.FromStream(ms);
 
                             this.flowLayoutPanel3.Controls.Add(box.pictureBox);
                         }
