@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Employees" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Employees">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="EmpID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" type="xs:int" minOccurs="0" />
+                <xs:element name="EmpName" type="xs:string" minOccurs="0" />
+                <xs:element name="Salary" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Salary_x002B_" msdata:ReadOnly="true" msdata:Expression="Salary*1.1" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Employees>
+    <EmpID>1</EmpID>
+    <EmpName>aaa</EmpName>
+    <Salary>77777</Salary>
+    <Salary_x002B_>85554.7</Salary_x002B_>
+  </Employees>
+  <Employees>
+    <EmpID>2</EmpID>
+    <EmpName>bbb</EmpName>
+    <Salary>50000</Salary>
+    <Salary_x002B_>55000.0</Salary_x002B_>
+  </Employees>
+</NewDataSet>

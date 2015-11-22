@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C941F9F9-AD24-4D78-8821-4D9754732D13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ADO.NET</RootNamespace>
+    <AssemblyName>ADO.NET</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdventureWorksDataSet.cs">
+      <DependentUpon>AdventureWorksDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdventureWorksDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdventureWorksDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HW\FrmAdventureWorksProduct_CRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW\FrmAdventureWorksProduct_CRUD.Designer.cs">
+      <DependentUpon>FrmAdventureWorksProduct_CRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW\FrmAdventureWorksProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW\FrmAdventureWorksProduct.Designer.cs">
+      <DependentUpon>FrmAdventureWorksProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW\FrmCategoryProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW\FrmCategoryProducts.Designer.cs">
+      <DependentUpon>FrmCategoryProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW\FrmCustomer_ListView_OrderGroupBy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW\FrmCustomer_ListView_OrderGroupBy.Designer.cs">
+      <DependentUpon>FrmCustomer_ListView_OrderGroupBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW\FrmLogOn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW\FrmLogOn.Designer.cs">
+      <DependentUpon>FrmLogOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW\FrmTreeView_Customer_DataSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW\FrmTreeView_Customer_DataSet.Designer.cs">
+      <DependentUpon>FrmTreeView_Customer_DataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW\MyAlbum\FrmMyAlbum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW\MyAlbum\FrmMyAlbum.Designer.cs">
+      <DependentUpon>FrmMyAlbum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW\MyAlbum\FrmMyAlbumManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW\MyAlbum\FrmMyAlbumManagement.Designer.cs">
+      <DependentUpon>FrmMyAlbumManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW\MyAlbum\Frm相片檢視器.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW\MyAlbum\Frm相片檢視器.designer.cs">
+      <DependentUpon>Frm相片檢視器.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW\MyAlbum\MyAlbumDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyAlbumDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HW\PartialClass_ProductPhotoTableAdapter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NorthwindDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="HW\FrmAdventureWorksProduct_CRUD.resx">
+      <DependentUpon>FrmAdventureWorksProduct_CRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW\FrmAdventureWorksProduct.resx">
+      <DependentUpon>FrmAdventureWorksProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW\FrmCategoryProducts.resx">
+      <DependentUpon>FrmCategoryProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW\FrmCustomer_ListView_OrderGroupBy.resx">
+      <DependentUpon>FrmCustomer_ListView_OrderGroupBy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW\FrmLogOn.resx">
+      <DependentUpon>FrmLogOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW\FrmTreeView_Customer_DataSet.resx">
+      <DependentUpon>FrmTreeView_Customer_DataSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW\MyAlbum\FrmMyAlbum.resx">
+      <DependentUpon>FrmMyAlbum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW\MyAlbum\FrmMyAlbumManagement.resx">
+      <DependentUpon>FrmMyAlbumManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW\MyAlbum\Frm相片檢視器.resx">
+      <DependentUpon>Frm相片檢視器.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="AdventureWorksDataSet.xsc">
+      <DependentUpon>AdventureWorksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AdventureWorksDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdventureWorksDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AdventureWorksDataSet.xss">
+      <DependentUpon>AdventureWorksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HW\MyAlbum\MyAlbumDataSet.xsc">
+      <DependentUpon>MyAlbumDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HW\MyAlbum\MyAlbumDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyAlbumDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HW\MyAlbum\MyAlbumDataSet.xss">
+      <DependentUpon>MyAlbumDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet.xsc">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NorthwindDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NorthwindDataSet.xss">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,119 @@
+C:\ADO.NET\ADO.NET\ADO.NET\bin\Debug\ADO.NET.exe.config
+C:\ADO.NET\ADO.NET\ADO.NET\bin\Debug\ADO.NET.exe
+C:\ADO.NET\ADO.NET\ADO.NET\bin\Debug\ADO.NET.pdb
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Form1.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_01_Overview.FrmOverview.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Properties.Resources.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.csproj.GenerateResource.Cache
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.exe
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.pdb
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmCategoryProducts.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_01_Overview.FrmTool.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmAdventureWorksProduct.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_02_sqlConnection.FrmSqlConnection.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmMyAlbum.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET._3._Connected_連線作業.FrmImageFlags.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線環境.FrmCustomers_ListView.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線環境.FrmConnected.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.csprojResolveAssemblyReference.cache
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmLogOn.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\Starter.FrmDisconnected_離線環境_Starter.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線作業.FrmDemoBeginExecuteReader.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線環境.FrmMyImageManagement.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\Demo.FrmTransactionIsolation.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmMyAlbumManagement.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\MyHomework._1128.Frm相片檢視器.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmProductDetails.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmDataBindings_MyImageTable.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmProductManagement.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmAddProduct.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmLookUp.resources
+C:\ADO.NET\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmRelation.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmAdventureWorksProduct.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmCategoryProducts.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線環境.FrmCustomers_ListView.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmLogOn.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmMyAlbum.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmMyAlbumManagement.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\MyHomework._1128.Frm相片檢視器.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_01_Overview.FrmOverview.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_01_Overview.FrmTool.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_02_sqlConnection.FrmSqlConnection.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線作業.FrmDemoBeginExecuteReader.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\Demo.FrmTransactionIsolation.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線環境.FrmConnected.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET._3._Connected_連線作業.FrmImageFlags.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線環境.FrmMyImageManagement.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmAddProduct.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmDataBindings_MyImageTable.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\Starter.FrmDisconnected_離線環境_Starter.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmLookUp.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmProductDetails.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmProductManagement.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmRelation.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Properties.Resources.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.csproj.GenerateResource.Cache
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\RdlCompile.cache
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\RdlCompile.compiled
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\bin\Debug\ADO.NET.exe.config
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\bin\Debug\ADO.NET.exe
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\bin\Debug\ADO.NET.pdb
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.exe
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.pdb
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_05_Reports.FrmReport.resources
+D:\隨身碟\KingStone\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.csprojResolveAssemblyReference.cache
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Form1.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmAdventureWorksProduct.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmCategoryProducts.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線環境.FrmCustomers_ListView.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmLogOn.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmTreeView_Customer_DataSet.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmMyAlbum.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmMyAlbumManagement.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\MyHomework._1128.Frm相片檢視器.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_01_Overview.FrmOverview.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_01_Overview.FrmTool.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_02_sqlConnection.FrmSqlConnection.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線作業.FrmDemoBeginExecuteReader.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\Demo.FrmTransactionIsolation.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線環境.FrmConnected.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET._3._Connected_連線作業.FrmImageFlags.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線環境.FrmMyImageManagement.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmAddProduct.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmDataBindings_MyImageTable.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\Starter.FrmDisconnected_離線環境_Starter.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmLookUp.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmProductDetails.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmProductManagement.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_04_Disconnected_離線環境.FrmRelation.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_05_Reports.FrmReport.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Properties.Resources.resources
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.csproj.GenerateResource.Cache
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\RdlCompile.cache
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\RdlCompile.compiled
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\bin\Debug\ADO.NET.exe.config
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\bin\Debug\ADO.NET.exe
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\bin\Debug\ADO.NET.pdb
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\bin\Debug\zh-Hant\Microsoft.VisualBasic.PowerPacks.resources.dll
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.csprojResolveAssemblyReference.cache
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.exe
+G:\MSIT 上課\MSIT VS2012\ADO.NET (MSIT 95)\ADO.NET\ADO.NET\obj\Debug\ADO.NET.pdb
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.csprojResolveAssemblyReference.cache
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmAdventureWorksProduct.resources
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmCategoryProducts.resources
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Lab_03_Connected_連線環境.FrmCustomers_ListView.resources
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmLogOn.resources
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmTreeView_Customer_DataSet.resources
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmMyAlbum.resources
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmMyAlbumManagement.resources
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\MyHomework._1128.Frm相片檢視器.resources
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.Properties.Resources.resources
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.csproj.GenerateResource.Cache
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.exe
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.pdb
+E:\temp\新增資料夾\ADO.NET\ADO.NET\bin\Debug\ADO.NET.exe.config
+E:\temp\新增資料夾\ADO.NET\ADO.NET\bin\Debug\ADO.NET.exe
+E:\temp\新增資料夾\ADO.NET\ADO.NET\bin\Debug\ADO.NET.pdb
+E:\temp\新增資料夾\ADO.NET\ADO.NET\bin\Debug\zh-Hant\Microsoft.VisualBasic.PowerPacks.resources.dll
+E:\temp\新增資料夾\ADO.NET\ADO.NET\obj\Debug\ADO.NET.HW.FrmAdventureWorksProduct_CRUD.resources

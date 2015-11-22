@@ -30,7 +30,7 @@ namespace ADO0NET
         }
         void picturebox_MouseClick(object sender, MouseEventArgs e)
         {
-            FrmImageFlags f = new FrmImageFlags();
+            FrmImage f = new FrmImage();
             f.Show();
         }
 

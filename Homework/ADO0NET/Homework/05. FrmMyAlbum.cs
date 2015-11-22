@@ -30,6 +30,8 @@ namespace ADO0NET.Homework
         }
         List<int> CategoryID = new List<int>();
         int photoCategoryID;
+        FrmImage f = new FrmImage();
+        FrmTools t = new FrmTools();
 
         void flowLayoutPanel_DragDrop(object sender, DragEventArgs e)
         {
@@ -140,34 +142,45 @@ namespace ADO0NET.Homework
                         this.flowLayoutPanel2.Controls.Clear();
                         while (datareader.Read())
                         {
-                            //============================
-                            PictureBox pictureBox = new PictureBox();
-                            pictureBox.BorderStyle = BorderStyle.FixedSingle;
-                            pictureBox.Height = 120;
-                            pictureBox.Width = 160;
-                            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                            pictureBox.Margin = new System.Windows.Forms.Padding(5);
-                            pictureBox.Padding = new System.Windows.Forms.Padding(2);
-                            pictureBox.MouseEnter += picturebox_MouseEnter;
-                            pictureBox.MouseLeave += picturebox_MouseLeave;
-                            pictureBox.MouseClick += picturebox_MouseClick;
-                            //============================
-
-                            byte[] bytes = (byte[])datareader["Picture"];
-                            MemoryStream ms = new MemoryStream(bytes);
-                            pictureBox.Image = Image.FromStream(ms);
                             
-                            this.flowLayoutPanel2.Controls.Add(pictureBox);
+                            byte[] bytes = (byte[])datareader["Picture"];
+                            AddPicture(bytes,flowLayoutPanel2);
                         }
                     }
                 }
             }
         }
 
+        private void AddPicture(byte[] bytes, FlowLayoutPanel flowlayoutpanel)
+        {
+            //========================================================
+            PictureBox pictureBox = new PictureBox();
+            pictureBox.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox.Height = 120;
+            pictureBox.Width = 160;
+            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox.Margin = new System.Windows.Forms.Padding(5);
+            pictureBox.Padding = new System.Windows.Forms.Padding(2);
+            pictureBox.MouseEnter += picturebox_MouseEnter;
+            pictureBox.MouseLeave += picturebox_MouseLeave;
+            if (flowlayoutpanel == this.flowLayoutPanel3)
+            {
+                pictureBox.MouseClick += picturebox_MouseClick;
+            }
+            //========================================================
+
+            MemoryStream ms = new MemoryStream(bytes);
+            pictureBox.Image = Image.FromStream(ms);
+            flowlayoutpanel.Controls.Add(pictureBox);
+        }
+
         void picturebox_MouseClick(object sender, MouseEventArgs e)
         {
-            FrmImageFlags f = new FrmImageFlags();
-            f.pictureboxIndex = this.flowLayoutPanel2.Controls.GetChildIndex((PictureBox)sender,false);
+            if (f.IsDisposed)
+            {
+                f = new FrmImage();
+            }
+            f.pictureboxIndex = this.flowLayoutPanel3.Controls.GetChildIndex((PictureBox)sender, false);
             f.Show();
         }
 
@@ -198,7 +211,6 @@ namespace ADO0NET.Homework
                             byte[] bytes = (byte[])datareader["Picture"];
                             MemoryStream ms = new MemoryStream(bytes);
                             box.pictureBox.Image = Image.FromStream(ms);
-                            box.pictureBox.Image= Image.FromStream(ms);
 
                             this.flowLayoutPanel3.Controls.Add(box.pictureBox);
                         }
@@ -223,6 +235,15 @@ namespace ADO0NET.Homework
             {
                 this.picturePictureBox.Image = Image.FromFile(this.openFileDialog1.FileName);
             }
+        }
+        
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (t.IsDisposed)
+            {
+                t = new FrmTools();
+            }
+            t.Show();
         }
 
       

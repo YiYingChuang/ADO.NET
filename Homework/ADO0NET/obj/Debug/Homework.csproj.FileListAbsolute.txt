@@ -59,3 +59,19 @@ C:\Users\David\Desktop\新增資料夾 (2)\ADO.NET\Homework\ADO0NET\obj\Debug\AD
 C:\Users\David\Desktop\新增資料夾 (2)\ADO.NET\Homework\ADO0NET\obj\Debug\ADO0NET.Properties.Resources.resources
 C:\Users\David\Desktop\新增資料夾 (2)\ADO.NET\Homework\ADO0NET\obj\Debug\Homework.csproj.GenerateResource.Cache
 C:\Users\David\Desktop\新增資料夾 (2)\ADO.NET\Homework\ADO0NET\obj\Debug\ADO0NET.Homework.FrmTreeview.resources
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\bin\Debug\ADO0NET.exe.config
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\ADO0NET.exe
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\ADO0NET.pdb
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\bin\Debug\ADO0NET.exe
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\bin\Debug\ADO0NET.pdb
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\Homework.csprojResolveAssemblyReference.cache
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\ADO0NET.Frm_Connected.resources
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\ADO0NET.Homework.Frm_Adventureworks.resources
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\ADO0NET._3._connected.FrmGroupby.resources
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\ADO0NET.Homework.FrmCategoryProducts_LinkLabel.resources
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\ADO0NET.Homework.FrmMyAlbum.resources
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\ADO.NET._3._Connected_連線作業.FrmImage.resources
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\ADO0NET.Homework.FrmTools.resources
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\ADO0NET.Homework.FrmTreeview.resources
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\ADO0NET.Properties.Resources.resources
+C:\Users\mbig\Desktop\ADO.NET111\Homework\ADO0NET\obj\Debug\Homework.csproj.GenerateResource.Cache
