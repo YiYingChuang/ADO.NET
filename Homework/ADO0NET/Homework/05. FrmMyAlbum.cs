@@ -33,10 +33,37 @@ namespace ADO0NET.Homework
         FrmImage f = new FrmImage();
         FrmTools t = new FrmTools();
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO:  這行程式碼會將資料載入 'myAlbumDataSet.Photos' 資料表。您可以視需要進行移動或移除。
+            this.photosTableAdapter.Fill(this.myAlbumDataSet.Photos);
+
+            // TODO:  這行程式碼會將資料載入 'myAlbumDataSet.PhotoCategory' 資料表。您可以視需要進行移動或移除。
+            this.photoCategoryTableAdapter.Fill(this.myAlbumDataSet.PhotoCategory);
+            AddLinkLableCategoryName();
+            this.comboBox1.SelectedIndex = 0;
+        }
+
+        void flowLayoutPanel_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
         void flowLayoutPanel_DragDrop(object sender, DragEventArgs e)
         {
             string[] filenames = (string[])e.Data.GetData(DataFormats.FileDrop);
+            if (this.tabControl1.SelectedIndex == 0)
+            {
+                AddPictureBoxByDragDrop(filenames, flowLayoutPanel2);
+            }
+            else
+            {
+                AddPictureBoxByDragDrop(filenames, flowLayoutPanel3);
+            }
+        }
 
+        private void AddPictureBoxByDragDrop(string[] filenames, FlowLayoutPanel flowlayoutpanel)
+        {
             //=====================
             PictureBox pictureBox = new PictureBox();
             pictureBox.BorderStyle = BorderStyle.FixedSingle;
@@ -47,63 +74,20 @@ namespace ADO0NET.Homework
             pictureBox.Padding = new System.Windows.Forms.Padding(2);
             pictureBox.MouseEnter += picturebox_MouseEnter;
             pictureBox.MouseLeave += picturebox_MouseLeave;
-            pictureBox.MouseClick += picturebox_MouseClick;
+            if (flowlayoutpanel == this.flowLayoutPanel3)
+            {
+                pictureBox.MouseClick += picturebox_MouseClick;
+            }
             //=====================
 
             pictureBox.Image = Image.FromFile(filenames[0]);
-            this.flowLayoutPanel3.Controls.Add(pictureBox);
+            flowlayoutpanel.Controls.Add(pictureBox);
+
             byte[] bytes;
             MemoryStream ms = new MemoryStream();
             pictureBox.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Bmp);
             bytes = ms.GetBuffer();
             this.insertphotos(bytes);
-        }
-
-        void flowLayoutPanel_DragEnter(object sender, DragEventArgs e)
-        {
-            e.Effect = DragDropEffects.Copy;
-        }
-       
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // TODO:  這行程式碼會將資料載入 'myAlbumDataSet.Photos' 資料表。您可以視需要進行移動或移除。
-            this.photosTableAdapter.Fill(this.myAlbumDataSet.Photos);
-
-            // TODO:  這行程式碼會將資料載入 'myAlbumDataSet.PhotoCategory' 資料表。您可以視需要進行移動或移除。
-            this.photoCategoryTableAdapter.Fill(this.myAlbumDataSet.PhotoCategory);
-
-            AddCategoryName();
-            this.comboBox1.SelectedIndex = 0;
-        }
-
-        private void AddCategoryName()
-        {
-            using (SqlConnection conn = new SqlConnection(Settings.Default.MyAlbumConnectionString))
-            {
-                conn.Open();
-
-                using (SqlCommand comm = new SqlCommand("select * from PhotoCategory", conn))
-                {
-
-                    using (SqlDataReader datareader = comm.ExecuteReader())
-                    {
-                        this.CategoryID.Clear();
-                        this.flowLayoutPanel1.Controls.Clear();
-                        while (datareader.Read())
-                        {
-                            
-                            LinkLabel newlink = new LinkLabel();
-                            string s = datareader["CategoryName"].ToString();
-                            newlink.Text = s;
-                            int i = (int)datareader["CategoryID"];
-                            this.CategoryID.Add(i);
-                            this.comboBox1.Items.Add(s);
-                            this.flowLayoutPanel1.Controls.Add(newlink);
-                            newlink.Click += newlink_Click;
-                        }
-                    }
-                }
-            }
         }
 
         void insertphotos(byte[] x)
@@ -129,6 +113,33 @@ namespace ADO0NET.Homework
             }
         }
 
+        private void AddLinkLableCategoryName()
+        {
+            using (SqlConnection conn = new SqlConnection(Settings.Default.MyAlbumConnectionString))
+            {
+                conn.Open();
+                using (SqlCommand comm = new SqlCommand("select * from PhotoCategory", conn))
+                {
+                    using (SqlDataReader datareader = comm.ExecuteReader())
+                    {
+                        this.CategoryID.Clear();
+                        this.flowLayoutPanel1.Controls.Clear();
+                        while (datareader.Read())
+                        {
+                            LinkLabel newlink = new LinkLabel();
+                            string s = datareader["CategoryName"].ToString();
+                            newlink.Text = s;
+                            int i = (int)datareader["CategoryID"];
+                            this.CategoryID.Add(i);
+                            this.comboBox1.Items.Add(s);
+                            this.flowLayoutPanel1.Controls.Add(newlink);
+                            newlink.Click += newlink_Click;
+                        }
+                    }
+                }
+            }
+        }
+
         void newlink_Click(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(Settings.Default.MyAlbumConnectionString))
@@ -142,16 +153,38 @@ namespace ADO0NET.Homework
                         this.flowLayoutPanel2.Controls.Clear();
                         while (datareader.Read())
                         {
-                            
                             byte[] bytes = (byte[])datareader["Picture"];
-                            AddPicture(bytes,flowLayoutPanel2);
+                            AddPictureBox(bytes,flowLayoutPanel2);
                         }
                     }
                 }
             }
         }
 
-        private void AddPicture(byte[] bytes, FlowLayoutPanel flowlayoutpanel)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(Settings.Default.MyAlbumConnectionString))
+            {
+                photoCategoryID = this.CategoryID[((ComboBox)sender).SelectedIndex];
+                using (SqlCommand comm = new SqlCommand("select * from Photos where CategoryID=" + photoCategoryID, conn))
+                {
+                    conn.Open();
+                    using (SqlDataReader datareader = comm.ExecuteReader())
+                    {
+                        this.flowLayoutPanel3.Controls.Clear();
+                        while (datareader.Read())
+                        {
+                            byte[] bytes = (byte[])datareader["Picture"];
+                            AddPictureBox(bytes, flowLayoutPanel3);
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        private void AddPictureBox(byte[] bytes, FlowLayoutPanel flowlayoutpanel)
         {
             //========================================================
             PictureBox pictureBox = new PictureBox();
@@ -184,41 +217,14 @@ namespace ADO0NET.Homework
             f.Show();
         }
 
-        void picturebox_MouseLeave(object sender, EventArgs e)
-        {
-            ((PictureBox)sender).BackColor = Color.White;
-        }
-
         private void picturebox_MouseEnter(object sender, EventArgs e)
         {
             ((PictureBox)sender).BackColor = Color.Salmon;
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        void picturebox_MouseLeave(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection(Settings.Default.MyAlbumConnectionString))
-            {
-                 photoCategoryID = this.CategoryID[((ComboBox)sender).SelectedIndex];
-                using (SqlCommand comm = new SqlCommand("select * from Photos where CategoryID=" + photoCategoryID, conn))
-                {
-                    conn.Open();
-                    using (SqlDataReader datareader = comm.ExecuteReader())
-                    {
-                        this.flowLayoutPanel3.Controls.Clear();
-                        while (datareader.Read())
-                        {
-                            ClsPictureBox box = new ClsPictureBox();
-                            byte[] bytes = (byte[])datareader["Picture"];
-                            MemoryStream ms = new MemoryStream(bytes);
-                            box.pictureBox.Image = Image.FromStream(ms);
-
-                            this.flowLayoutPanel3.Controls.Add(box.pictureBox);
-                        }
-                    }
-                }
-            }
-
-
+            ((PictureBox)sender).BackColor = Color.White;
         }
 
         private void photoCategoryBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -226,7 +232,13 @@ namespace ADO0NET.Homework
             this.Validate();
             this.photoCategoryBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.myAlbumDataSet);
+        }
 
+        private void photosBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.photosBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.myAlbumDataSet);
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -65,7 +65,7 @@
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.photosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fKPhotosPhotoCategoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
@@ -78,7 +78,6 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.photoIDTextBox = new System.Windows.Forms.TextBox();
-            this.fKPhotosPhotoCategoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoryIDTextBox1 = new System.Windows.Forms.TextBox();
             this.photoNameTextBox = new System.Windows.Forms.TextBox();
             this.picturePictureBox = new System.Windows.Forms.PictureBox();
@@ -91,9 +90,12 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.photosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.photoCategoryTableAdapter = new ADO0NET.MyAlbumDataSetTableAdapters.PhotoCategoryTableAdapter();
             this.tableAdapterManager = new ADO0NET.MyAlbumDataSetTableAdapters.TableAdapterManager();
             this.photosTableAdapter = new ADO0NET.MyAlbumDataSetTableAdapters.PhotosTableAdapter();
+            this.btnBrowser = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             categoryIDLabel = new System.Windows.Forms.Label();
             categoryNameLabel = new System.Windows.Forms.Label();
             photoIDLabel = new System.Windows.Forms.Label();
@@ -125,81 +127,81 @@
             this.splitContainer4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.photosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKPhotosPhotoCategoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.photosDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.photosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // categoryIDLabel
             // 
             categoryIDLabel.AutoSize = true;
-            categoryIDLabel.Location = new System.Drawing.Point(28, 61);
+            categoryIDLabel.Location = new System.Drawing.Point(28, 56);
             categoryIDLabel.Name = "categoryIDLabel";
-            categoryIDLabel.Size = new System.Drawing.Size(66, 13);
+            categoryIDLabel.Size = new System.Drawing.Size(66, 12);
             categoryIDLabel.TabIndex = 1;
             categoryIDLabel.Text = "Category ID:";
             // 
             // categoryNameLabel
             // 
             categoryNameLabel.AutoSize = true;
-            categoryNameLabel.Location = new System.Drawing.Point(28, 87);
+            categoryNameLabel.Location = new System.Drawing.Point(28, 80);
             categoryNameLabel.Name = "categoryNameLabel";
-            categoryNameLabel.Size = new System.Drawing.Size(83, 13);
+            categoryNameLabel.Size = new System.Drawing.Size(81, 12);
             categoryNameLabel.TabIndex = 3;
             categoryNameLabel.Text = "Category Name:";
             // 
             // photoIDLabel
             // 
             photoIDLabel.AutoSize = true;
-            photoIDLabel.Location = new System.Drawing.Point(29, 57);
+            photoIDLabel.Location = new System.Drawing.Point(29, 53);
             photoIDLabel.Name = "photoIDLabel";
-            photoIDLabel.Size = new System.Drawing.Size(52, 13);
+            photoIDLabel.Size = new System.Drawing.Size(50, 12);
             photoIDLabel.TabIndex = 0;
             photoIDLabel.Text = "Photo ID:";
             // 
             // categoryIDLabel1
             // 
             categoryIDLabel1.AutoSize = true;
-            categoryIDLabel1.Location = new System.Drawing.Point(29, 83);
+            categoryIDLabel1.Location = new System.Drawing.Point(29, 77);
             categoryIDLabel1.Name = "categoryIDLabel1";
-            categoryIDLabel1.Size = new System.Drawing.Size(66, 13);
+            categoryIDLabel1.Size = new System.Drawing.Size(66, 12);
             categoryIDLabel1.TabIndex = 2;
             categoryIDLabel1.Text = "Category ID:";
             // 
             // photoNameLabel
             // 
             photoNameLabel.AutoSize = true;
-            photoNameLabel.Location = new System.Drawing.Point(29, 109);
+            photoNameLabel.Location = new System.Drawing.Point(29, 101);
             photoNameLabel.Name = "photoNameLabel";
-            photoNameLabel.Size = new System.Drawing.Size(69, 13);
+            photoNameLabel.Size = new System.Drawing.Size(65, 12);
             photoNameLabel.TabIndex = 4;
             photoNameLabel.Text = "Photo Name:";
             // 
             // pictureLabel
             // 
             pictureLabel.AutoSize = true;
-            pictureLabel.Location = new System.Drawing.Point(316, 54);
+            pictureLabel.Location = new System.Drawing.Point(316, 50);
             pictureLabel.Name = "pictureLabel";
-            pictureLabel.Size = new System.Drawing.Size(43, 13);
+            pictureLabel.Size = new System.Drawing.Size(40, 12);
             pictureLabel.TabIndex = 6;
             pictureLabel.Text = "Picture:";
             // 
             // descriptionLabel
             // 
             descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(29, 135);
+            descriptionLabel.Location = new System.Drawing.Point(29, 125);
             descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(63, 13);
+            descriptionLabel.Size = new System.Drawing.Size(61, 12);
             descriptionLabel.TabIndex = 8;
             descriptionLabel.Text = "Description:";
             // 
             // dateLabel
             // 
             dateLabel.AutoSize = true;
-            dateLabel.Location = new System.Drawing.Point(29, 162);
+            dateLabel.Location = new System.Drawing.Point(29, 150);
             dateLabel.Name = "dateLabel";
-            dateLabel.Size = new System.Drawing.Size(33, 13);
+            dateLabel.Size = new System.Drawing.Size(29, 12);
             dateLabel.TabIndex = 10;
             dateLabel.Text = "Date:";
             // 
@@ -217,15 +219,15 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(959, 551);
-            this.splitContainer1.SplitterDistance = 53;
+            this.splitContainer1.Size = new System.Drawing.Size(959, 509);
+            this.splitContainer1.SplitterDistance = 48;
             this.splitContainer1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Location = new System.Drawing.Point(12, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(227, 27);
             this.label1.TabIndex = 13;
@@ -244,7 +246,7 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.splitContainer4);
-            this.splitContainer2.Size = new System.Drawing.Size(959, 494);
+            this.splitContainer2.Size = new System.Drawing.Size(959, 457);
             this.splitContainer2.SplitterDistance = 459;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -267,16 +269,16 @@
             // 
             this.splitContainer3.Panel2.AutoScroll = true;
             this.splitContainer3.Panel2.Controls.Add(this.photoCategoryDataGridView);
-            this.splitContainer3.Size = new System.Drawing.Size(459, 494);
-            this.splitContainer3.SplitterDistance = 192;
+            this.splitContainer3.Size = new System.Drawing.Size(459, 457);
+            this.splitContainer3.SplitterDistance = 177;
             this.splitContainer3.TabIndex = 0;
             // 
             // categoryIDTextBox
             // 
             this.categoryIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.photoCategoryBindingSource, "CategoryID", true));
-            this.categoryIDTextBox.Location = new System.Drawing.Point(117, 58);
+            this.categoryIDTextBox.Location = new System.Drawing.Point(117, 54);
             this.categoryIDTextBox.Name = "categoryIDTextBox";
-            this.categoryIDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.categoryIDTextBox.Size = new System.Drawing.Size(100, 22);
             this.categoryIDTextBox.TabIndex = 2;
             // 
             // photoCategoryBindingSource
@@ -292,9 +294,9 @@
             // categoryNameTextBox
             // 
             this.categoryNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.photoCategoryBindingSource, "CategoryName", true));
-            this.categoryNameTextBox.Location = new System.Drawing.Point(117, 84);
+            this.categoryNameTextBox.Location = new System.Drawing.Point(117, 78);
             this.categoryNameTextBox.Name = "categoryNameTextBox";
-            this.categoryNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.categoryNameTextBox.Size = new System.Drawing.Size(100, 22);
             this.categoryNameTextBox.TabIndex = 4;
             // 
             // photoCategoryBindingNavigator
@@ -339,8 +341,8 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(27, 22);
+            this.bindingNavigatorCountItem.Text = "/{0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorDeleteItem
@@ -432,7 +434,7 @@
             this.photoCategoryDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.photoCategoryDataGridView.Location = new System.Drawing.Point(0, 0);
             this.photoCategoryDataGridView.Name = "photoCategoryDataGridView";
-            this.photoCategoryDataGridView.Size = new System.Drawing.Size(459, 298);
+            this.photoCategoryDataGridView.Size = new System.Drawing.Size(459, 276);
             this.photoCategoryDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -458,6 +460,7 @@
             // splitContainer4.Panel1
             // 
             this.splitContainer4.Panel1.AutoScroll = true;
+            this.splitContainer4.Panel1.Controls.Add(this.btnBrowser);
             this.splitContainer4.Panel1.Controls.Add(this.bindingNavigator1);
             this.splitContainer4.Panel1.Controls.Add(photoIDLabel);
             this.splitContainer4.Panel1.Controls.Add(this.photoIDTextBox);
@@ -476,8 +479,8 @@
             // 
             this.splitContainer4.Panel2.AutoScroll = true;
             this.splitContainer4.Panel2.Controls.Add(this.photosDataGridView);
-            this.splitContainer4.Size = new System.Drawing.Size(496, 494);
-            this.splitContainer4.SplitterDistance = 271;
+            this.splitContainer4.Size = new System.Drawing.Size(496, 457);
+            this.splitContainer4.SplitterDistance = 250;
             this.splitContainer4.TabIndex = 0;
             // 
             // bindingNavigator1
@@ -506,7 +509,7 @@
             this.bindingNavigator1.MovePreviousItem = this.toolStripButton4;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.toolStripTextBox1;
-            this.bindingNavigator1.Size = new System.Drawing.Size(562, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(496, 25);
             this.bindingNavigator1.TabIndex = 12;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -519,16 +522,16 @@
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "Add new";
             // 
-            // photosBindingSource
+            // fKPhotosPhotoCategoryBindingSource
             // 
-            this.photosBindingSource.DataMember = "FK_Photos_PhotoCategory";
-            this.photosBindingSource.DataSource = this.photoCategoryBindingSource;
+            this.fKPhotosPhotoCategoryBindingSource.DataMember = "FK_Photos_PhotoCategory";
+            this.fKPhotosPhotoCategoryBindingSource.DataSource = this.photoCategoryBindingSource;
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(35, 22);
-            this.toolStripLabel1.Text = "of {0}";
+            this.toolStripLabel1.Size = new System.Drawing.Size(27, 22);
+            this.toolStripLabel1.Text = "/{0}";
             this.toolStripLabel1.ToolTipText = "Total number of items";
             // 
             // toolStripButton2
@@ -607,42 +610,38 @@
             this.toolStripButton7.Name = "toolStripButton7";
             this.toolStripButton7.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton7.Text = "儲存資料";
+            this.toolStripButton7.Click += new System.EventHandler(this.photoCategoryBindingNavigatorSaveItem_Click);
             // 
             // photoIDTextBox
             // 
             this.photoIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fKPhotosPhotoCategoryBindingSource, "PhotoID", true));
-            this.photoIDTextBox.Location = new System.Drawing.Point(104, 54);
+            this.photoIDTextBox.Location = new System.Drawing.Point(104, 50);
             this.photoIDTextBox.Name = "photoIDTextBox";
-            this.photoIDTextBox.Size = new System.Drawing.Size(200, 20);
+            this.photoIDTextBox.Size = new System.Drawing.Size(200, 22);
             this.photoIDTextBox.TabIndex = 1;
-            // 
-            // fKPhotosPhotoCategoryBindingSource
-            // 
-            this.fKPhotosPhotoCategoryBindingSource.DataMember = "FK_Photos_PhotoCategory";
-            this.fKPhotosPhotoCategoryBindingSource.DataSource = this.photoCategoryBindingSource;
             // 
             // categoryIDTextBox1
             // 
             this.categoryIDTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fKPhotosPhotoCategoryBindingSource, "CategoryID", true));
-            this.categoryIDTextBox1.Location = new System.Drawing.Point(104, 80);
+            this.categoryIDTextBox1.Location = new System.Drawing.Point(104, 74);
             this.categoryIDTextBox1.Name = "categoryIDTextBox1";
-            this.categoryIDTextBox1.Size = new System.Drawing.Size(200, 20);
+            this.categoryIDTextBox1.Size = new System.Drawing.Size(200, 22);
             this.categoryIDTextBox1.TabIndex = 3;
             // 
             // photoNameTextBox
             // 
             this.photoNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fKPhotosPhotoCategoryBindingSource, "PhotoName", true));
-            this.photoNameTextBox.Location = new System.Drawing.Point(104, 106);
+            this.photoNameTextBox.Location = new System.Drawing.Point(104, 98);
             this.photoNameTextBox.Name = "photoNameTextBox";
-            this.photoNameTextBox.Size = new System.Drawing.Size(200, 20);
+            this.photoNameTextBox.Size = new System.Drawing.Size(200, 22);
             this.photoNameTextBox.TabIndex = 5;
             // 
             // picturePictureBox
             // 
             this.picturePictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.fKPhotosPhotoCategoryBindingSource, "Picture", true));
-            this.picturePictureBox.Location = new System.Drawing.Point(365, 54);
+            this.picturePictureBox.Location = new System.Drawing.Point(356, 48);
             this.picturePictureBox.Name = "picturePictureBox";
-            this.picturePictureBox.Size = new System.Drawing.Size(197, 124);
+            this.picturePictureBox.Size = new System.Drawing.Size(140, 114);
             this.picturePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturePictureBox.TabIndex = 7;
             this.picturePictureBox.TabStop = false;
@@ -650,18 +649,18 @@
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fKPhotosPhotoCategoryBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(104, 132);
+            this.descriptionTextBox.Location = new System.Drawing.Point(104, 122);
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(200, 20);
+            this.descriptionTextBox.Size = new System.Drawing.Size(200, 22);
             this.descriptionTextBox.TabIndex = 9;
             // 
             // dateDateTimePicker
             // 
             this.dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.fKPhotosPhotoCategoryBindingSource, "Date", true));
             this.dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fKPhotosPhotoCategoryBindingSource, "Date", true));
-            this.dateDateTimePicker.Location = new System.Drawing.Point(104, 158);
+            this.dateDateTimePicker.Location = new System.Drawing.Point(104, 146);
             this.dateDateTimePicker.Name = "dateDateTimePicker";
-            this.dateDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.dateDateTimePicker.Size = new System.Drawing.Size(200, 22);
             this.dateDateTimePicker.TabIndex = 11;
             // 
             // photosDataGridView
@@ -679,7 +678,7 @@
             this.photosDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.photosDataGridView.Location = new System.Drawing.Point(0, 0);
             this.photosDataGridView.Name = "photosDataGridView";
-            this.photosDataGridView.Size = new System.Drawing.Size(496, 219);
+            this.photosDataGridView.Size = new System.Drawing.Size(496, 203);
             this.photosDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn3
@@ -719,6 +718,11 @@
             this.dataGridViewTextBoxColumn7.HeaderText = "Date";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
+            // photosBindingSource
+            // 
+            this.photosBindingSource.DataMember = "FK_Photos_PhotoCategory";
+            this.photosBindingSource.DataSource = this.photoCategoryBindingSource;
+            // 
             // photoCategoryTableAdapter
             // 
             this.photoCategoryTableAdapter.ClearBeforeFill = true;
@@ -734,11 +738,25 @@
             // 
             this.photosTableAdapter.ClearBeforeFill = true;
             // 
+            // btnBrowser
+            // 
+            this.btnBrowser.Location = new System.Drawing.Point(412, 181);
+            this.btnBrowser.Name = "btnBrowser";
+            this.btnBrowser.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowser.TabIndex = 13;
+            this.btnBrowser.Text = "Browser...";
+            this.btnBrowser.UseVisualStyleBackColor = true;
+            this.btnBrowser.Click += new System.EventHandler(this.btnBrowser_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // FrmTools
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 551);
+            this.ClientSize = new System.Drawing.Size(959, 509);
             this.Controls.Add(this.splitContainer1);
             this.Name = "FrmTools";
             this.Text = "FrmTools";
@@ -771,10 +789,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.photosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKPhotosPhotoCategoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.photosDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.photosBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -837,5 +855,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource fKPhotosPhotoCategoryBindingSource;
+        private System.Windows.Forms.Button btnBrowser;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

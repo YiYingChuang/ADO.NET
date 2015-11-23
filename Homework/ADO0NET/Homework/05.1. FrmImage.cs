@@ -26,20 +26,20 @@ namespace ADO.NET._3._Connected_連線作業
            this.PictureWidth = this.pictureBox1.Width;
            this.FormHeight = this.Height;
            this.FormWidth = this.Width;
-           this.pictureBox1.Image = ((PictureBox)ClsPictureBox.Form1.flowLayoutPanel2.Controls[pictureboxIndex]).Image;
+           this.pictureBox1.Image = ((PictureBox)ClsPictureBox.Form1.flowLayoutPanel3.Controls[pictureboxIndex]).Image;
        }
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             if (pictureboxIndex < ClsPictureBox.Form1.flowLayoutPanel2.Controls.Count-1)
             pictureboxIndex -= 1;
-            this.pictureBox1.Image = ((PictureBox)ClsPictureBox.Form1.flowLayoutPanel2.Controls[pictureboxIndex]).Image;
+            this.pictureBox1.Image = ((PictureBox)ClsPictureBox.Form1.flowLayoutPanel3.Controls[pictureboxIndex]).Image;
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            if (pictureboxIndex < ClsPictureBox.Form1.flowLayoutPanel2.Controls.Count-1)
+            if (pictureboxIndex < ClsPictureBox.Form1.flowLayoutPanel3.Controls.Count-1)
             pictureboxIndex += 1;
-            this.pictureBox1.Image = ((PictureBox)ClsPictureBox.Form1.flowLayoutPanel2.Controls[pictureboxIndex]).Image;
+            this.pictureBox1.Image = ((PictureBox)ClsPictureBox.Form1.flowLayoutPanel3.Controls[pictureboxIndex]).Image;
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
@@ -51,15 +51,15 @@ namespace ADO.NET._3._Connected_連線作業
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (pictureboxIndex < ClsPictureBox.Form1.flowLayoutPanel2.Controls.Count - 1)
+            if (pictureboxIndex < ClsPictureBox.Form1.flowLayoutPanel3.Controls.Count - 1)
             {
                 pictureboxIndex += 1;
-                this.pictureBox1.Image = ((PictureBox)ClsPictureBox.Form1.flowLayoutPanel2.Controls[pictureboxIndex]).Image;
+                this.pictureBox1.Image = ((PictureBox)ClsPictureBox.Form1.flowLayoutPanel3.Controls[pictureboxIndex]).Image;
             }
             else
             {
                 pictureboxIndex = 0;
-                this.pictureBox1.Image = ((PictureBox)ClsPictureBox.Form1.flowLayoutPanel2.Controls[pictureboxIndex]).Image;
+                this.pictureBox1.Image = ((PictureBox)ClsPictureBox.Form1.flowLayoutPanel3.Controls[pictureboxIndex]).Image;
             }
         }
 

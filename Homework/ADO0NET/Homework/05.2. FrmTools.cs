@@ -33,5 +33,13 @@ namespace ADO0NET.Homework
             this.photoCategoryTableAdapter.Fill(this.myAlbumDataSet.PhotoCategory);
 
         }
+
+        private void btnBrowser_Click(object sender, EventArgs e)
+        {
+            if (this.openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                this.picturePictureBox.Image = Image.FromFile(this.openFileDialog1.FileName);
+            }
+        }
     }
 }

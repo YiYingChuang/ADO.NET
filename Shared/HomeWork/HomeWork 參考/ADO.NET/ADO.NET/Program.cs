@@ -22,7 +22,7 @@ namespace ADO.NET
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new  FrmMyAlbum());
+            Application.Run(new FrmTreeView_Customer_DataSet());
            
       
         }
