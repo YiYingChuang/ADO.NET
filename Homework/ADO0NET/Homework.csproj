@@ -105,11 +105,11 @@
     <Compile Include="Homework\05.1. FrmImage.designer.cs">
       <DependentUpon>05.1. FrmImage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Homework\FrmTools.cs">
+    <Compile Include="Homework\05.2. FrmTools.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Homework\FrmTools.Designer.cs">
-      <DependentUpon>FrmTools.cs</DependentUpon>
+    <Compile Include="Homework\05.2. FrmTools.Designer.cs">
+      <DependentUpon>05.2. FrmTools.cs</DependentUpon>
     </Compile>
     <Compile Include="Homework\FrmTreeview.cs">
       <SubType>Form</SubType>
@@ -147,8 +147,8 @@
     <EmbeddedResource Include="Homework\05.1. FrmImage.resx">
       <DependentUpon>05.1. FrmImage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Homework\FrmTools.resx">
-      <DependentUpon>FrmTools.cs</DependentUpon>
+    <EmbeddedResource Include="Homework\05.2. FrmTools.resx">
+      <DependentUpon>05.2. FrmTools.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Homework\FrmTreeview.resx">
       <DependentUpon>FrmTreeview.cs</DependentUpon>
