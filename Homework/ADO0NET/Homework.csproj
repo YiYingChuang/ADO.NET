@@ -111,11 +111,17 @@
     <Compile Include="Homework\05.2. FrmTools.Designer.cs">
       <DependentUpon>05.2. FrmTools.cs</DependentUpon>
     </Compile>
-    <Compile Include="Homework\FrmTreeview.cs">
+    <Compile Include="Homework\06. FrmTreeview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Homework\FrmTreeview.Designer.cs">
-      <DependentUpon>FrmTreeview.cs</DependentUpon>
+    <Compile Include="Homework\06. FrmTreeview.Designer.cs">
+      <DependentUpon>06. FrmTreeview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homework\06.1 FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homework\06.1 FrmUser.Designer.cs">
+      <DependentUpon>06.1 FrmUser.cs</DependentUpon>
     </Compile>
     <Compile Include="MyAlbumDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -150,8 +156,11 @@
     <EmbeddedResource Include="Homework\05.2. FrmTools.resx">
       <DependentUpon>05.2. FrmTools.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Homework\FrmTreeview.resx">
-      <DependentUpon>FrmTreeview.cs</DependentUpon>
+    <EmbeddedResource Include="Homework\06. FrmTreeview.resx">
+      <DependentUpon>06. FrmTreeview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homework\06.1 FrmUser.resx">
+      <DependentUpon>06.1 FrmUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

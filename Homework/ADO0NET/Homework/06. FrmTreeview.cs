@@ -36,12 +36,11 @@ namespace ADO0NET.Homework
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            this.listView1.View = View.Details;
+            this.listView1.Visible = false;
             try
             {
-                using (SqlConnection conn = new SqlConnection())
+                using (SqlConnection conn = new SqlConnection(Settings.Default.northwindConnectionString))
                 {
-                    conn.ConnectionString = Settings.Default.northwindConnectionString;
                     using (SqlCommand comm = new SqlCommand("select * from Customers", conn))
                     {
                         conn.Open();
@@ -58,26 +57,33 @@ namespace ADO0NET.Homework
                                 ListViewItem viewitem = this.listView1.Items.Add(DataReader[0].ToString());
                                 for (int i = 1; i < DataReader.FieldCount; i++)
                                 {
-                                     if (DataReader.IsDBNull(i))  // 取得值，指出資料行是否含有不存在或遺漏的值。
+                                    if (DataReader.IsDBNull(i)) 
                                     {
                                         viewitem.SubItems.Add("空值");
                                     }
                                     else
                                     {
-                                     viewitem.SubItems.Add(DataReader[i].ToString());
+                                        viewitem.SubItems.Add(DataReader[i].ToString());
                                     }
-
-                                    if(this.listView1.Groups.Count==0)
-                                    {
-                                    this.listView1.Groups.Add(DataReader[8].ToString());
-                                    }
-                                    foreach(var item in this.listView1.Groups)
-                                    {
-                                    
-                                    }
-                                    if(this.listView1.Groups[].Name ==null )
-                                    DataReader[8].ToString()
                                 }
+                                string s =viewitem.SubItems[8].Text;
+                                if (this.listView1.Groups[s] == null)
+                                    {
+                                        this.listView1.Groups.Add(s, s);
+                                        viewitem.Group = this.listView1.Groups[s];
+                                        this.listView1.Groups[s].Header = string.Format("{0}{1}", s, this.listView1.Groups[s].Items.Count);
+                                    }
+                                    else
+                                    {
+                                        foreach (ListViewGroup item in this.listView1.Groups)
+                                        {
+                                            if (s == item.Name)
+                                            {
+                                                viewitem.Group = this.listView1.Groups[item.Name];
+                                                this.listView1.Groups[item.Name].Header = string.Format("{0} ({1})", item.Name, this.listView1.Groups[item.Name].Items.Count);
+                                            }
+                                        }
+                                    }
                             }
 
                         }//auto DataReader.dispose();
@@ -89,6 +95,36 @@ namespace ADO0NET.Homework
             {
 
                 MessageBox.Show(ex.Message);
+            }
+            this.listView1.Visible = true;
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            foreach (DataRow item in this.northwindDataSet.Customers.Rows)
+            {
+                string country = "";
+                string city = "";
+
+                country = Convert.ToString(item["Country"]);
+                city = Convert.ToString(item["City"]);
+
+                TreeNode fathernode = this.treeView1.Nodes[country];
+
+                if (fathernode == null)
+                {
+                    fathernode = this.treeView1.Nodes.Add(country, country);
+                }
+                TreeNode child_t = fathernode.Nodes[city];
+
+                if (child_t == null)
+                {
+                    child_t = fathernode.Nodes.Add(city, city);
+                }
+                
+                child_t.Nodes.Add(Convert.ToString(item["CustomerID"]));
+                fathernode.Text = string.Format("{0} ({1})", country, fathernode.Nodes.Count);
+                child_t.Text = string.Format("{0} ({1})", city, child_t.Nodes.Count);
             }
         }
     }
