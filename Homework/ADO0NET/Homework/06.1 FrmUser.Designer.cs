@@ -84,12 +84,14 @@
             // 
             // Cancel_button
             // 
+            this.Cancel_button.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Cancel_button.Location = new System.Drawing.Point(149, 137);
             this.Cancel_button.Name = "Cancel_button";
             this.Cancel_button.Size = new System.Drawing.Size(75, 23);
             this.Cancel_button.TabIndex = 5;
             this.Cancel_button.Text = "Cancel";
             this.Cancel_button.UseVisualStyleBackColor = true;
+            this.Cancel_button.Click += new System.EventHandler(this.Cancel_button_Click);
             // 
             // CreatUser_button
             // 

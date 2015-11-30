@@ -21,46 +21,88 @@ namespace ADO0NET.Homework
 
         private void OK_button_Click(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection(Settings.Default.northwindConnectionString))
+            try
             {
-                using (SqlCommand comm = new SqlCommand()) 
+                using (SqlConnection conn = new SqlConnection(Settings.Default.northwindConnectionString))
                 {
-                    comm.CommandText = "select * from User where UserName = @UserName";
-                    comm.Connection = conn;
-                    string UserName = this.UserNametextBox.Text;
-                    string Password = this.UserNametextBox.Text;
+                    using (SqlCommand comm = new SqlCommand())
+                    {
+                        comm.CommandText = "select * from [dbo].[User] where UserName = @UserName";
+                        //comm.CommandText = "select * from User where UserName = @UserName";
+                        comm.Connection = conn;
+                        string UserName = this.UserNametextBox.Text;
+                        string Password = this.PasswordtextBox.Text;
 
-                    comm.Parameters.Add("@UserName", SqlDbType.NVarChar, 20).Value = UserName;
-                    SqlDataReader dataread = comm.ExecuteReader();
-                    dataread.Read();
-                    if (dataread.HasRows)
-                    { 
-                    
+                        comm.Parameters.Add("@UserName", SqlDbType.NVarChar, 20).Value = UserName;
+                        conn.Open();
+
+                        using (SqlDataReader dataread = comm.ExecuteReader())
+                        { 
+                            dataread.Read();
+                            if (dataread.HasRows)
+                            {
+                                if (Password == dataread["Password"].ToString())
+                                {
+                                    MessageBox.Show("OK!");
+                                    this.DialogResult = System.Windows.Forms.DialogResult.OK;
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Wrong Password!");
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Please Creat a New UserName!");
+                            }
+                        
+                        }
+                        
                     }
                 }
+
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+
         }
 
         private void CreatUser_button_Click(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection(Settings.Default.northwindConnectionString))
+            try
             {
-                using (SqlCommand comm = new SqlCommand())
+                using (SqlConnection conn = new SqlConnection(Settings.Default.northwindConnectionString))
                 {
-                    comm.CommandText = "select * from User where UserName = @UserName";
-                    comm.Connection = conn;
-                    string UserName = this.UserNametextBox.Text;
-                    string Password = this.UserNametextBox.Text;
-
-                    comm.Parameters.Add("@UserName", SqlDbType.NVarChar, 20).Value = UserName;
-                    SqlDataReader dataread = comm.ExecuteReader();
-                    dataread.Read();
-                    if (dataread.HasRows)
+                    using (SqlCommand comm = new SqlCommand())
                     {
+                        comm.CommandText = "Insert into [dbo].[User](UserName,Password) values (@UserName,@Password)";
+                        comm.Connection = conn;
+                        string UserName = this.UserNametextBox.Text;
+                        string Password = this.PasswordtextBox.Text;
 
+                        comm.Parameters.Add("@UserName", SqlDbType.NVarChar, 20).Value = UserName;
+                        comm.Parameters.Add("@Password", SqlDbType.NVarChar, 20).Value = Password;
+                        conn.Open();
+                        comm.ExecuteNonQuery();
+                        MessageBox.Show("Creat Successfully!");
                     }
                 }
             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message)
+                    ;
+            }
+            
+        }
+
+        private void Cancel_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

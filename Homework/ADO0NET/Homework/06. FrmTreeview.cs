@@ -32,6 +32,17 @@ namespace ADO0NET.Homework
             // TODO:  這行程式碼會將資料載入 'northwindDataSet.Customers' 資料表。您可以視需要進行移動或移除。
             this.customersTableAdapter.Fill(this.northwindDataSet.Customers);
 
+            FrmUser f = new FrmUser();
+            if (f.ShowDialog() == System.Windows.Forms.DialogResult.Cancel)
+            {
+                this.Close();
+            }
+            else
+            {
+                this.Show();
+            }
+            
+
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
