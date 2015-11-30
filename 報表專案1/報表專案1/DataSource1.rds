@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DataSource1">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=.;Initial Catalog=northwind</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+    <Prompt>指定資料來源 DataSource1 的使用者名稱和密碼</Prompt>
+  </ConnectionProperties>
+  <DataSourceID>19b0f023-f55c-4831-be4b-cbacfe6526ad</DataSourceID>
+</RptDataSource>

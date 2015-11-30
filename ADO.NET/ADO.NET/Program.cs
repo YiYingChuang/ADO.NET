@@ -1,7 +1,10 @@
 ﻿using ADO.NET._1._Overview;
 using ADO.NET._2._SqlConnection_連接水管;
 using ADO.NET._3._Connected_連線環境;
+using ADO.NET._4._DisConnected_離線環境_DataSet;
 using ADO.NET.MyHomeWork;
+using Demo;
+using Starter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +23,7 @@ namespace ADO.NET
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmTestAdventureWorks());
+            Application.Run(new   FrmDisconnected_離線環境_Solution());
         }
     }
 }

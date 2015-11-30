@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Xml.Linq" />
@@ -83,11 +85,53 @@
     <Compile Include="3. Connected 連線環境\FrmImageFlags.designer.cs">
       <DependentUpon>FrmImageFlags.cs</DependentUpon>
     </Compile>
-    <Compile Include="4. DisConnected 離線環境\FrmDataGridViewFormat.cs">
+    <Compile Include="3. Connected 連線環境\Transaction\FrmTransactionIsolation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="4. DisConnected 離線環境\FrmDataGridViewFormat.Designer.cs">
+    <Compile Include="3. Connected 連線環境\Transaction\FrmTransactionIsolation.designer.cs">
+      <DependentUpon>FrmTransactionIsolation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmAddProduct.Designer.cs">
+      <DependentUpon>FrmAddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmDataBindings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmDataBindings.Designer.cs">
+      <DependentUpon>FrmDataBindings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmDataGridViewFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmDataGridViewFormat.Designer.cs">
       <DependentUpon>FrmDataGridViewFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmDisconnected 離線環境_Starter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmDisconnected 離線環境_Starter.designer.cs">
+      <DependentUpon>FrmDisconnected 離線環境_Starter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmLookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmLookUp.Designer.cs">
+      <DependentUpon>FrmLookUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmProductDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmProductDetails.Designer.cs">
+      <DependentUpon>FrmProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmRelation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmRelation.Designer.cs">
+      <DependentUpon>FrmRelation.cs</DependentUpon>
     </Compile>
     <Compile Include="AdventureWorksDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -99,6 +143,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmProductCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4. DisConnected 離線環境 DataSet\FrmProductCRUD.Designer.cs">
+      <DependentUpon>FrmProductCRUD.cs</DependentUpon>
     </Compile>
     <Compile Include="MyHomeWork\2. FrmAdventureWorks_CRUD.cs">
       <SubType>Form</SubType>
@@ -124,6 +174,30 @@
     <Compile Include="MyHomeWork\4. FrmCustomer_ListView_OrderGroupBy.Designer.cs">
       <DependentUpon>4. FrmCustomer_ListView_OrderGroupBy.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyHomeWork\6. FrmLogOn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomeWork\6. FrmLogOn.Designer.cs">
+      <DependentUpon>6. FrmLogOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomeWork\6. FrmTreeView_Customer_DataSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomeWork\6. FrmTreeView_Customer_DataSet.Designer.cs">
+      <DependentUpon>6. FrmTreeView_Customer_DataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomeWork\5. FrmMyAlbum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomeWork\5. FrmMyAlbum.Designer.cs">
+      <DependentUpon>5. FrmMyAlbum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomeWork\7. FrmStudentXML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomeWork\7. FrmStudentXML.Designer.cs">
+      <DependentUpon>7. FrmStudentXML.cs</DependentUpon>
+    </Compile>
     <Compile Include="NorthwindDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -148,6 +222,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="3. Connected 連線環境\FrmImageFlags.resx">
       <DependentUpon>FrmImageFlags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3. Connected 連線環境\Transaction\FrmTransactionIsolation.resx">
+      <DependentUpon>FrmTransactionIsolation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4. DisConnected 離線環境 DataSet\FrmAddProduct.resx">
+      <DependentUpon>FrmAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4. DisConnected 離線環境 DataSet\FrmDataBindings.resx">
+      <DependentUpon>FrmDataBindings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4. DisConnected 離線環境 DataSet\FrmDisconnected 離線環境_Starter.resx">
+      <DependentUpon>FrmDisconnected 離線環境_Starter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4. DisConnected 離線環境 DataSet\FrmLookUp.resx">
+      <DependentUpon>FrmLookUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4. DisConnected 離線環境 DataSet\FrmProductDetails.resx">
+      <DependentUpon>FrmProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4. DisConnected 離線環境 DataSet\FrmProductCRUD.resx">
+      <DependentUpon>FrmProductCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4. DisConnected 離線環境 DataSet\FrmRelation.resx">
+      <DependentUpon>FrmRelation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyHomeWork\2. FrmAdventureWorks_CRUD.resx">
       <DependentUpon>2. FrmAdventureWorks_CRUD.cs</DependentUpon>

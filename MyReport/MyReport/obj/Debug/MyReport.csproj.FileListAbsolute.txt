@@ -1,0 +1,11 @@
+E:\ADO.NET\MyReport\MyReport\bin\Debug\MyReport.exe.config
+E:\ADO.NET\MyReport\MyReport\bin\Debug\MyReport.exe
+E:\ADO.NET\MyReport\MyReport\bin\Debug\MyReport.pdb
+E:\ADO.NET\MyReport\MyReport\obj\Debug\MyReport.csprojResolveAssemblyReference.cache
+E:\ADO.NET\MyReport\MyReport\obj\Debug\MyReport.Form1.resources
+E:\ADO.NET\MyReport\MyReport\obj\Debug\MyReport.Properties.Resources.resources
+E:\ADO.NET\MyReport\MyReport\obj\Debug\MyReport.csproj.GenerateResource.Cache
+E:\ADO.NET\MyReport\MyReport\obj\Debug\MyReport.exe
+E:\ADO.NET\MyReport\MyReport\obj\Debug\MyReport.pdb
+E:\ADO.NET\MyReport\MyReport\obj\Debug\RdlCompile.cache
+E:\ADO.NET\MyReport\MyReport\obj\Debug\RdlCompile.compiled
