@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using ADO0NET.Properties;
+using System.Web.Security;
+using System.Web.Configuration;
 
 namespace ADO0NET.Homework
 {
@@ -41,6 +43,7 @@ namespace ADO0NET.Homework
                             dataread.Read();
                             if (dataread.HasRows)
                             {
+                                Password = FormsAuthentication.HashPasswordForStoringInConfigFile(Password, FormsAuthPasswordFormat.SHA1.ToString());
                                 if (Password == dataread["Password"].ToString())
                                 {
                                     MessageBox.Show("OK!");
@@ -82,9 +85,9 @@ namespace ADO0NET.Homework
                         comm.Connection = conn;
                         string UserName = this.UserNametextBox.Text;
                         string Password = this.PasswordtextBox.Text;
-
+                        Password = FormsAuthentication.HashPasswordForStoringInConfigFile(Password, FormsAuthPasswordFormat.SHA1.ToString());
                         comm.Parameters.Add("@UserName", SqlDbType.NVarChar, 20).Value = UserName;
-                        comm.Parameters.Add("@Password", SqlDbType.NVarChar, 20).Value = Password;
+                        comm.Parameters.Add("@Password", SqlDbType.NVarChar, 50).Value = Password;
                         conn.Open();
                         comm.ExecuteNonQuery();
                         MessageBox.Show("Creat Successfully!");
